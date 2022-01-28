@@ -30,29 +30,10 @@ class FragmentA : Fragment() {
                 layoutManager = LinearLayoutManager(context)
                 adapter = MyAdapter()
             }
-            view.Cview.setOnClickListener { Navigation.findNavController(view).navigate(R.id.action_fragmentA_to_fragmentNew) }
         }
         return view
     }
 }
-       /* return view
-
-        private var layoutManager: RecyclerView.LayoutManager?=null
-    private var adapter: RecyclerView.Adapter<MyAdapter.MyViewHolder>?=null
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-
-        layoutManager = LinearLayoutManager(fragment)
-
-        recyclerView.layoutManager = layoutManager
-
-        adapter = MyAdapter()
-        recyclerView.adapter = adapter
-    }*/
-
-
 
 
 

@@ -16,10 +16,12 @@ class MyAdapter(): RecyclerView.Adapter<MyAdapter.MyViewHolder>() {
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
+
         val inflater: LayoutInflater = LayoutInflater.from(parent.context)
         val view : View = inflater.inflate(R.layout.items,parent,false)
 
         return MyViewHolder(view)
+
 
 
     }
@@ -27,16 +29,28 @@ class MyAdapter(): RecyclerView.Adapter<MyAdapter.MyViewHolder>() {
     override fun onBindViewHolder(holder: MyViewHolder, @SuppressLint("RecyclerView") position: Int) {
         //holder.Image.setImageResource(Image[position])
         holder.title.text = title[position]
+        holder.itemView.setOnClickListener(object : View.OnClickListener{
+            override fun onClick(v: View?) {
 
+                if (position == 0) {
+                    val activity = v!!.context as AppCompatActivity
+                    val mainFragment = FragmentB()
+                    activity.supportFragmentManager.beginTransaction()
+                        .replace(R.id.rec, mainFragment).addToBackStack(null).commit()
+                }
+
+            }
+        })
 
 
 
     }
+
     override fun getItemCount(): Int {
         return title.size
     }
-    class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        //var Image = itemView.findViewById<ImageView>(R.id.imagev)
+    class MyViewHolder(itemView: View) :RecyclerView.ViewHolder(itemView) {
+
         var title = itemView.findViewById<TextView>(R.id.textv)
 
 
