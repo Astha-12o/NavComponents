@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+   <Button
+       android:id="@+id/fragmentAbtn"
+       android:layout_width="200dp"
+       android:layout_height="80dp"
+       android:layout_marginLeft="90dp"
+       android:layout_marginTop="40dp"
+       android:text="CSE"
+       android:textSize="25dp"/>
+
+    <Button
+        android:id="@+id/fragmentBbtn"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="30dp"
+        android:text="ECE"
+        android:textSize="25dp"/>
+
+    <Button
+        android:id="@+id/fragmentCbtn"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="30dp"
+        android:text="EIE"
+        android:textSize="25dp"/>
+
+        <Button
+            android:id="@+id/fragmentDbtn"
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="30dp"
+            android:text="EE"
+            android:textSize="25dp"/>
+
+        <Button
+            android:id="@+id/fragmentEbtn"
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="30dp"
+            android:text="CE"
+            android:textSize="25dp"/>
+
+        <Button
+            android:id="@+id/fragmentFbtn"
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="30dp"
+            android:text="ME"
+            android:textSize="25dp"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
