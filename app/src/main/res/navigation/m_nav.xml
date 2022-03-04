@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/mainFragment"
-        android:name="com.example.navcomponents.MainFragment"
+        android:name="com.example.navcomponents.Fragments.MainFragment"
         android:label="fragment_main"
         tools:layout="@layout/fragment_main" >
         <action
@@ -16,10 +16,22 @@
         <action
             android:id="@+id/action_mainFragment_to_fragmentB"
             app:destination="@id/fragmentB" />
+        <action
+            android:id="@+id/action_mainFragment_to_fragmentC"
+            app:destination="@id/fragmentC" />
+        <action
+            android:id="@+id/action_mainFragment_to_fragmentD"
+            app:destination="@id/fragmentD" />
+        <action
+            android:id="@+id/action_mainFragment_to_fragmentF"
+            app:destination="@id/fragmentF" />
+        <action
+            android:id="@+id/action_mainFragment_to_fragmentE"
+            app:destination="@id/fragmentE" />
     </fragment>
     <fragment
         android:id="@+id/fragmentA"
-        android:name="com.example.navcomponents.FragmentA"
+        android:name="com.example.navcomponents.Fragments.FragmentA"
         android:label="fragment_a"
         tools:layout="@layout/fragment_a" >
         <action
@@ -28,12 +40,36 @@
     </fragment>
     <fragment
         android:id="@+id/fragmentB"
-        android:name="com.example.navcomponents.FragmentB"
+        android:name="com.example.navcomponents.Fragments.FragmentB"
         android:label="fragment_b"
         tools:layout="@layout/fragment_b" />
     <fragment
         android:id="@+id/fragmentNew"
         android:name="com.example.navcomponents.FragmentNew"
         android:label="fragment_new"
-        tools:layout="@layout/fragment_new" />
+        tools:layout="@layout/fragment_new" >
+        <action
+            android:id="@+id/action_fragmentNew_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentC"
+        android:name="com.example.navcomponents.Fragments.FragmentC"
+        android:label="fragment_c"
+        tools:layout="@layout/fragment_c" />
+    <fragment
+        android:id="@+id/fragmentD"
+        android:name="com.example.navcomponents.Fragments.FragmentD"
+        android:label="fragment_d"
+        tools:layout="@layout/fragment_d" />
+    <fragment
+        android:id="@+id/fragmentE"
+        android:name="com.example.navcomponents.Fragments.FragmentE"
+        android:label="fragment_e"
+        tools:layout="@layout/fragment_e" />
+    <fragment
+        android:id="@+id/fragmentF"
+        android:name="com.example.navcomponents.Fragments.FragmentF"
+        android:label="fragment_fragment"
+        tools:layout="@layout/fragment_fragment" />
 </navigation>
